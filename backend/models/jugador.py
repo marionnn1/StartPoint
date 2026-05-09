@@ -1,0 +1,11 @@
+from database.db import db
+
+class Jugador(db.Model):
+    __tablename__ = 'jugadores'
+    id = db.Column(db.Integer, primary_key=True)
+    alias = db.Column(db.String(50), nullable=False)
+    nombre_completo = db.Column(db.String(150), nullable=False)
+    email = db.Column(db.String(120), unique=True, nullable=False)
+    password = db.Column(db.String(255), nullable=False)
+    posicion_en_pista = db.Column(db.Enum('Drive', 'Revés', 'Ambos'), default='Ambos')
+    puntos_individuales = db.Column(db.Integer, default=0)
