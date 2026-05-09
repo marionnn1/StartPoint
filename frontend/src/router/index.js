@@ -1,13 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import Ranking from '../views/Ranking.vue' // <-- Importar la nueva vista
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', component: Home },
-    { path: '/ranking', component: Home }, // Temporalmente apuntan a Home
-    { path: '/ligas', component: Home },
-    { path: '/perfil', component: Home },
+    {
+      path: '/',
+      name: 'home',
+      component: Home
+    },
+    {
+      path: '/ranking',
+      name: 'ranking',
+      component: Ranking // <-- Cambiar el componente aquí
+    },
+    // ... el resto de rutas (ligas, perfil)
   ]
 })
 

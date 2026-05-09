@@ -31,15 +31,18 @@ onMounted(() => {
         <div class="flex justify-between h-20">
           
           <div class="flex items-center group cursor-pointer">
-            <div class="relative h-10 w-10 mr-3">
-              <div class="absolute inset-0 bg-lime-400 rounded-full shadow-[0_0_15px_rgba(163,230,53,0.4)] group-hover:rotate-12 transition-transform"></div>
-              <div class="absolute inset-0 border-2 border-black/10 rounded-full scale-75 rotate-45"></div>
-            </div>
-            <div class="flex flex-col leading-none">
-              <span class="text-xl font-black text-blue-950 dark:text-white tracking-tighter italic uppercase">START<span class="text-blue-600">POINT</span></span>
-              <span class="text-[9px] font-bold text-slate-400 dark:text-slate-500 tracking-[0.2em] uppercase">Pro League</span>
-            </div>
-          </div>
+  <div class="relative h-12 w-12 mr-3">
+    <svg viewBox="0 0 100 100" class="w-full h-full">
+      <path d="M50 10 L85 45 L50 80 L15 45 Z" class="fill-none stroke-blue-600 dark:stroke-lime-400" stroke-width="8" stroke-linejoin="round" />
+      <circle cx="50" cy="45" r="12" class="fill-blue-600 dark:fill-white group-hover:fill-lime-400 transition-colors" />
+      <path d="M42 80 H58 V95 H42 Z" class="fill-slate-200 dark:fill-slate-700" />
+    </svg>
+  </div>
+  <div class="flex flex-col leading-none">
+    <span class="text-xl font-black text-blue-950 dark:text-white tracking-tighter italic uppercase">START<span class="text-blue-600 dark:text-lime-400">POINT</span></span>
+    <span class="text-[9px] font-bold text-slate-400 dark:text-slate-500 tracking-[0.2em] uppercase">Advanced Padel Tool</span>
+  </div>
+</div>
 
           <div class="hidden md:flex items-center space-x-1">
             <router-link to="/" class="nav-item">Dashboard</router-link>
