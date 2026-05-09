@@ -1,5 +1,3 @@
-# StartPoint
-
 # StartPoint 🎾 - Professional Padel League Experience
 
 **StartPoint** es una plataforma de gestión de élite diseñada para transformar la experiencia del pádel amateur. Inspirada en los estándares visuales y competitivos de la **FIP (Federación Internacional de Pádel)**, la app ofrece una infraestructura digital robusta para que cada partido se sienta como una final de tour profesional.
@@ -61,3 +59,61 @@ StartPoint/
 │   ├── models/           # Definición de entidades (Jugador, Partido, Pareja)
 │   └── database/         # Conexión a la base de datos
 └── .gitignore            # Filtro de archivos unificado
+⚙️ Configuración e Instalación
+Requisitos
+Node.js (v18+)
+
+Python (v3.10+)
+
+MySQL
+
+1. Clonar el repositorio
+Bash
+git clone [https://github.com/marionnn1/StartPoint.git](https://github.com/marionnn1/StartPoint.git)
+cd StartPoint
+2. Levantar el Backend
+Bash
+cd backend
+python -m venv .venv
+source .venv/Scripts/activate # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+python app.py
+3. Levantar el Frontend
+Bash
+cd ../frontend
+npm install
+npm run dev
+🌳 Flujo de Trabajo (Git Strategy)
+Para mantener la integridad del código, seguimos el estándar de ramas:
+
+main: Versión estable de producción.
+
+develop: Rama de integración de nuevas funcionalidades.
+
+feature/*: Ramas temporales para el desarrollo de nuevas tareas.
+
+📈 Próximos Pasos (Roadmap)
+[ ] Conexión de API con los datos reales de MySQL.
+
+[ ] Formulario visual de registro de resultados.
+
+[ ] Generación automática de cuadros de torneos (Brackets).
+
+[ ] Perfiles de jugador detallados con gráficas de evolución.
+
+Desarrollado con pasión por marionnn1 🎾
+
+
+---
+
+### ¿Cómo aplicarlo ahora mismo?
+
+Como ya tienes la estructura de ramas que creamos antes:
+
+1.  Copia este contenido en tu archivo `README.md` de la raíz.
+2.  Lanza estos comandos para subirlo a la rama de desarrollo:
+
+```powershell
+git add README.md
+git commit -m "docs: generado README completo con visión de negocio y guía técnica"
+git push origin develop
